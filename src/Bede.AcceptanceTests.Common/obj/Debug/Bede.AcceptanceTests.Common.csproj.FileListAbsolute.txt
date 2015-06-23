@@ -9,3 +9,16 @@ c:\users\payne\documents\visual studio 2013\Projects\Bede.AcceptanceTests.Common
 c:\users\payne\documents\visual studio 2013\Projects\Bede.AcceptanceTests.Common\Bede.AcceptanceTests.Common\obj\Debug\Bede.AcceptanceTests.Common.csprojResolveAssemblyReference.cache
 c:\users\payne\documents\visual studio 2013\Projects\Bede.AcceptanceTests.Common\Bede.AcceptanceTests.Common\obj\Debug\Bede.AcceptanceTests.Common.dll
 c:\users\payne\documents\visual studio 2013\Projects\Bede.AcceptanceTests.Common\Bede.AcceptanceTests.Common\obj\Debug\Bede.AcceptanceTests.Common.pdb
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\obj\Debug\Bede.AcceptanceTests.Common.csprojResolveAssemblyReference.cache
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\obj\Debug\Bede.AcceptanceTests.Common.dll
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\Bede.AcceptanceTests.Common.dll
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\Bede.AcceptanceTests.Common.pdb
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\WebDriver.dll
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\WebDriver.Support.dll
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\ThoughtWorks.Selenium.Core.xml
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\WebDriver.xml
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\bin\Debug\WebDriver.Support.xml
+C:\BedeRepos\Bede.AcceptanceTests.Common\src\Bede.AcceptanceTests.Common\obj\Debug\Bede.AcceptanceTests.Common.pdb

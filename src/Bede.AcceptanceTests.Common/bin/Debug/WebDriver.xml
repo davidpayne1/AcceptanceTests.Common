@@ -2114,6 +2114,12 @@
       <returns>
         <see langword="true" /> if the platforms match; otherwise <see langword="false" />.</returns>
     </member>
+    <member name="M:OpenQA.Selenium.Platform.ToString">
+      <summary>
+            Returns the string value for this platform type.
+            </summary>
+      <returns>The string value for this platform type.</returns>
+    </member>
     <member name="P:OpenQA.Selenium.Platform.CurrentPlatform">
       <summary>
             Gets the current platform.
@@ -3385,6 +3391,12 @@
             </summary>
       <param name="options">The <see cref="T:OpenQA.Selenium.Chrome.ChromeOptions" /> to be used with the Chrome driver.</param>
     </member>
+    <member name="M:OpenQA.Selenium.Chrome.ChromeDriver.#ctor(OpenQA.Selenium.Chrome.ChromeDriverService)">
+      <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.Chrome.ChromeDriver" /> class using the specified driver service.
+            </summary>
+      <param name="service">The <see cref="T:OpenQA.Selenium.Chrome.ChromeDriverService" /> used to initialize the driver.</param>
+    </member>
     <member name="M:OpenQA.Selenium.Chrome.ChromeDriver.#ctor(System.String)">
       <summary>
             Initializes a new instance of the <see cref="T:OpenQA.Selenium.Chrome.ChromeDriver" /> class using the specified path 
@@ -4216,12 +4228,6 @@
             Waits for the process to complete execution.
             </summary>
     </member>
-    <member name="M:OpenQA.Selenium.Firefox.FirefoxBinary.Clean(OpenQA.Selenium.Firefox.FirefoxProfile)">
-      <summary>
-            Initializes the binary with the specified profile.
-            </summary>
-      <param name="profile">The <see cref="T:OpenQA.Selenium.Firefox.FirefoxProfile" /> to use to initialize the binary.</param>
-    </member>
     <member name="M:OpenQA.Selenium.Firefox.FirefoxBinary.Quit">
       <summary>
             Stops the execution of this <see cref="T:OpenQA.Selenium.Firefox.FirefoxBinary" />, terminating the process if necessary.
@@ -5003,6 +5009,12 @@
             </summary>
       <param name="options">The <see cref="T:OpenQA.Selenium.IE.InternetExplorerOptions" /> used to initialize the driver.</param>
     </member>
+    <member name="M:OpenQA.Selenium.IE.InternetExplorerDriver.#ctor(OpenQA.Selenium.IE.InternetExplorerDriverService)">
+      <summary>
+            Initializes a new instance of the <see cref="T:OpenQA.Selenium.IE.InternetExplorerDriver" /> class using the specified driver service.
+            </summary>
+      <param name="service">The <see cref="T:OpenQA.Selenium.IE.InternetExplorerDriverService" /> used to initialize the driver.</param>
+    </member>
     <member name="M:OpenQA.Selenium.IE.InternetExplorerDriver.#ctor(System.String)">
       <summary>
             Initializes a new instance of the <see cref="T:OpenQA.Selenium.IE.InternetExplorerDriver" /> class using the specified path 
@@ -5225,6 +5237,31 @@
             Dismiss unexpected alerts.
             </summary>
     </member>
+    <member name="T:OpenQA.Selenium.IE.InternetExplorerPageLoadStrategy">
+      <summary>
+            Specifies the behavior of waiting for page loads in the IE driver.
+            </summary>
+    </member>
+    <member name="F:OpenQA.Selenium.IE.InternetExplorerPageLoadStrategy.Default">
+      <summary>
+            Indicates the behavior is not set.
+            </summary>
+    </member>
+    <member name="F:OpenQA.Selenium.IE.InternetExplorerPageLoadStrategy.Normal">
+      <summary>
+            Waits for pages to load and ready state to be 'complete'.
+            </summary>
+    </member>
+    <member name="F:OpenQA.Selenium.IE.InternetExplorerPageLoadStrategy.Eager">
+      <summary>
+            Waits for pages to load and for ready state to be 'interactive' or 'complete'.
+            </summary>
+    </member>
+    <member name="F:OpenQA.Selenium.IE.InternetExplorerPageLoadStrategy.None">
+      <summary>
+            Does not wait for pages to load, returning immediately.
+            </summary>
+    </member>
     <member name="T:OpenQA.Selenium.IE.InternetExplorerOptions">
       <summary>
             Class to manage options specific to <see cref="T:OpenQA.Selenium.IE.InternetExplorerDriver" /></summary>
@@ -5315,6 +5352,12 @@
       <summary>
             Gets or sets the value for describing how unexpected alerts are to be handled in the IE driver.
             Defaults to <see cref="F:OpenQA.Selenium.IE.InternetExplorerUnexpectedAlertBehavior.Default" />.
+            </summary>
+    </member>
+    <member name="P:OpenQA.Selenium.IE.InternetExplorerOptions.PageLoadStrategy">
+      <summary>
+            Gets or sets the value for describing how the browser is to wait for pages to load in the IE driver.
+            Defaults to <see cref="F:OpenQA.Selenium.IE.InternetExplorerPageLoadStrategy.Default" />.
             </summary>
     </member>
     <member name="P:OpenQA.Selenium.IE.InternetExplorerOptions.EnablePersistentHover">
@@ -7037,6 +7080,11 @@
             Gets or sets the type of the proxy server ('http', 'socks5' or 'none').
             </summary>
     </member>
+    <member name="P:OpenQA.Selenium.PhantomJS.PhantomJSDriverService.ProxyAuthentication">
+      <summary>
+            Gets or sets the proxy authentication info (e.g. username:password).
+            </summary>
+    </member>
     <member name="P:OpenQA.Selenium.PhantomJS.PhantomJSDriverService.ScriptEncoding">
       <summary>
             Gets or sets the encoding used for the starting script (default is "utf8").
@@ -7045,6 +7093,11 @@
     <member name="P:OpenQA.Selenium.PhantomJS.PhantomJSDriverService.SslProtocol">
       <summary>
             Gets or sets the SSL protocol for secure connections ('sslv3' (default), 'sslv2', 'tlsv1' or 'any').
+            </summary>
+    </member>
+    <member name="P:OpenQA.Selenium.PhantomJS.PhantomJSDriverService.SslCertificatesPath">
+      <summary>
+            Gets or sets the location for custom CA certificates (if none set, uses system default).
             </summary>
     </member>
     <member name="P:OpenQA.Selenium.PhantomJS.PhantomJSDriverService.WebSecurity">
@@ -7259,6 +7312,11 @@
             Capability name used to indicate how the browser handles unexpected alerts.
             </summary>
     </member>
+    <member name="F:OpenQA.Selenium.Remote.CapabilityType.PageLoadStrategy">
+      <summary>
+            Capability name used to indicate the page load strategy for the browser.
+            </summary>
+    </member>
     <member name="T:OpenQA.Selenium.Remote.Command">
       <summary>
             Provides a way to send commands to the remote server
@@ -7376,9 +7434,9 @@
       <param name="commandName">The <see cref="T:OpenQA.Selenium.Remote.DriverCommand" /> for which to get the information.</param>
       <returns>The <see cref="T:OpenQA.Selenium.Remote.CommandInfo" /> for the specified command.</returns>
     </member>
-    <member name="M:OpenQA.Selenium.Remote.CommandInfoRepository.TryAddAdditionalCommand(System.String,OpenQA.Selenium.Remote.CommandInfo)">
+    <member name="M:OpenQA.Selenium.Remote.CommandInfoRepository.TryAddCommand(System.String,OpenQA.Selenium.Remote.CommandInfo)">
       <summary>
-            Tries the add an additional command to the list of known commands.
+            Tries to add a command to the list of known commands.
             </summary>
       <param name="commandName">Name of the command.</param>
       <param name="commandInfo">The command information.</param>
@@ -7386,7 +7444,8 @@
         <see langword="true" /> if the new command has been added successfully; otherwise, <see langword="false" />.</returns>
       <remarks>
             This method is used by WebDriver implementations to add additional custom driver-specific commands.
-            This method will not overwrite existing commands for a specific name.
+            This method will not overwrite existing commands for a specific name, and will return <see langword="false" />
+            in that case.
             </remarks>
     </member>
     <member name="P:OpenQA.Selenium.Remote.CommandInfoRepository.Instance">
